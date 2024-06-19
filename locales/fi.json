@@ -1,0 +1,180 @@
+{
+  "clip": {
+    "description": "Toistaa leikeäänitiedoston",
+    "usagesReply": "Käyttö: {prefix}clip <nimi>",
+    "errorQueue": "Leikettä ei voi toistaa, koska jonossa on aktiivinen toisto.",
+    "errorNotChannel": "Sinun on liityttävä puhekanavaan ensin!"
+  },
+  "clips": {
+    "description": "Listaa kaikki leikkeet"
+  },
+  "help": {
+    "description": "Näyttää kaikki komennot ja kuvaukset",
+    "embedTitle": "{botname} Ohje",
+    "embedDescription": "Kaikkien komentojen luettelo"
+  },
+  "invite": {
+    "description": "Lähetä botti kutsulinkki"
+  },
+  "loop": {
+    "description": "Vaihtaa musiikin toiston silmukan",
+    "errorNotQueue": "Mitään ei ole toistossa.",
+    "result": "Silmukka on nyt {loop}"
+  },
+  "lyrics": {
+    "description": "Hae tällä hetkellä toistetun kappaleen sanat",
+    "errorNotQueue": "Mitään ei ole toistossa.",
+    "lyricsNotFound": "Ei löytynyt sanoja kappaleelle {title}.",
+    "embedTitle": "{title} - Sanat"
+  },
+  "move": {
+    "description": "Siirtää kappaleita jonossa",
+    "errorNotQueue": "Ei ole jonoa.",
+    "usagesReply": "Käyttö: {prefix}move <Jono Numero>",
+    "result": "<@{author}> 🚚 siirsi **{title}** paikkaan {index} jonossa.",
+    "args": {
+      "movefrom": "Siirrettävä paikka",
+      "moveto": "Paikka, johon siirretään"
+    }
+  },
+  "nowplaying": {
+    "description": "Näyttää tällä hetkellä toistettavan kappaleen",
+    "errorNotQueue": "Mitään ei ole toistossa.",
+    "embedTitle": "Nyt toistetaan",
+    "live": " ◉ LIVE",
+    "timeRemaining": "Jäljellä oleva aika: {time}"
+  },
+  "pause": {
+    "description": "Keskeyttää tällä hetkellä toistettavan musiikin",
+    "errorNotQueue": "Mitään ei ole toistossa.",
+    "result": "<@{author}> ⏸ keskeytti musiikin."
+  },
+  "ping": {
+    "description": "Näyttää botin keskimääräisen ping-ajan",
+    "result": "📈 Keskimääräinen ping API:lle: {ping} ms"
+  },
+  "play": {
+    "description": "Toistaa ääntä YouTubesta",
+    "errorNotChannel": "Sinun on liityttävä puhekanavaan ensin!",
+    "errorNotInSameChannel": "Sinun on oltava samassa kanavassa kuin {user}",
+    "usageReply": "Käyttö: {prefix}play <YouTube URL | Videon Nimi>",
+    "missingPermissionConnect": "Ei voida yhdistää puhekanavaan, puuttuvat oikeudet",
+    "missingPermissionSpeak": "En voi puhua tässä puhekanavassa, varmista, että minulla on asianmukaiset oikeudet!",
+    "queueAdded": "✅ **{title}** on lisätty jonoon käyttäjän <@{author}> toimesta",
+    "cantJoinChannel": "Ei voitu liittyä kanavaan: {error}",
+    "queueEnded": "❌ Musiikkijono päättyi.",
+    "queueError": "Virhe: {error}",
+    "startedPlaying": "🎶 Aloitti toiston: **{title}** {url}",
+    "skipSong": "<@{author}> ⏩ ohitti kappaleen",
+    "pauseSong": "<@{author}> ⏸ keskeytti musiikin.",
+    "resumeSong": "<@{author}> ▶ jatkoi musiikkia!",
+    "unmutedSong": "<@{author}> 🔊 poisti mykistyksen musiikista!",
+    "mutedSong": "<@{author}> 🔇 mykisti musiikin!",
+    "decreasedVolume": "<@{author}> 🔉 vähensi äänenvoimakkuutta, äänenvoimakkuus on nyt {volume}%",
+    "increasedVolume": "<@{author}> 🔊 lisäsi äänenvoimakkuutta, äänenvoimakkuus on nyt {volume}%",
+    "loopSong": "<@{author}> Silmukka on nyt {loop}",
+    "stopSong": "<@{author}> ⏹ pysäytti musiikin!",
+    "leaveChannel": "Poistutaan puhekanavasta...",
+    "songNotFound": "Ääntä ei löydy",
+    "songAccessErr": "Video on ikärajattu, yksityinen tai ei saatavilla",
+    "errorNoResults": "Ei tuloksia osoitteelle {url}",
+    "errorInvalidURL": "Virheellinen URL, kokeile haku tai YouTube URL"
+  },
+  "playlist": {
+    "description": "Toistaa soittolistan YouTubesta",
+    "usagesReply": "Käyttö: {prefix}playlist <YouTube Soittolista URL | Soittolistan Nimi>",
+    "errorNotChannel": "Sinun on liityttävä puhekanavaan ensin!",
+    "errorNotInSameChannel": "Sinun on oltava samassa kanavassa kuin {user}",
+    "missingPermissionConnect": "Ei voida yhdistää puhekanavaan, puuttuvat oikeudet",
+    "missingPermissionSpeak": "En voi puhua tässä puhekanavassa, varmista, että minulla on asianmukaiset oikeudet!",
+    "errorNotFoundPlaylist": "Soittolistaa ei löytynyt :(",
+    "fetchingPlaylist": "⌛ haetaan soittolistaa...",
+    "playlistCharLimit": "\nSoittolista on merkkirajoituksen suurempi...",
+    "startedPlaylist": "<@{author}> Aloitti soittolistan",
+    "cantJoinChannel": "Ei voitu liittyä kanavaan: {error}"
+  },
+  "pruning": {
+    "description": "Vaihtaa viestien karsimisen tilan",
+    "errorWritingFile": "Tiedostoon kirjoittamisessa tapahtui virhe.",
+    "result": "Viestien karsiminen on nyt {result}"
+  },
+  "queue": {
+    "description": "Näyttää musiikkijonon ja tällä hetkellä toistettavan kappaleen.",
+    "missingPermissionMessage": "Puuttuu oikeus hallita viestejä tai lisätä reaktioita",
+    "errorNotQueue": "❌ **Mitään ei ole toistossa tällä palvelimella**",
+    "currentPage": "Nykyinen sivu - ",
+    "embedTitle": "Kappalejono\n",
+    "embedCurrentSong": "**Nykyinen kappale - [{title}]({url})**\n\n{info}"
+  },
+  "remove": {
+    "description": "Poistaa kappaleen jonosta",
+    "errorNotQueue": "Ei ole jonoa.",
+    "usageReply": "Käyttö: {prefix}remove <Jono Numero>",
+    "result": "<@{author}> ❌ poisti **{title}** jonosta."
+  },
+  "resume": {
+    "description": "Jatkaa tällä hetkellä toistettavan musiikin toistoa",
+    "errorNotQueue": "Mitään ei ole toistossa.",
+    "resultNotPlaying": "<@{author}> ▶ jatkoi musiikkia!",
+    "errorPlaying": "Jono ei ole pysäytetty."
+  },
+  "search": {
+    "description": "Hae ja valitse toistettavia videoita",
+    "usageReply": "Käyttö: {prefix}{name} <Videon Nimi>",
+    "errorAlreadyCollector": "Viestin kerääjä on jo aktiivinen tässä kanavassa.",
+    "errorNotChannel": "Sinun on liityttävä puhekanavaan ensin!",
+    "resultEmbedTitle": "**Vastaa kappaleen numerolla, jonka haluat toistaa**",
+    "resultEmbedDesc": "Tulokset haulle: {search}",
+    "optionQuery": "Hakukysely",
+    "noResults": "Ei tuloksia haulle, kokeile jotain muuta"
+  },
+  "shuffle": {
+    "description": "Sekoittaa jonon",
+    "errorNotQueue": "Ei ole jonoa.",
+    "result": "<@{author}> 🔀 sekoitti jonon"
+  },
+  "skip": {
+    "description": "Ohittaa tällä hetkellä toistettavan kappaleen",
+    "errorNotQueue": "Mitään ei ole toistossa, mitä voisin ohittaa sinulle.",
+    "result": "<@{author}> ⏭ ohitti kappaleen"
+  },
+  "skipto": {
+    "description": "Ohittaa valitun jononumeron kohdalle",
+    "usageReply": "Käyttö: {prefix}{name} <Jono Numero>",
+    "errorNotQueue": "Ei ole jonoa.",
+    "errorNotValid": "Jono koostuu vain {length} kappaleesta!",
+    "result": "<@{author}> ⏭ ohitti {arg} kappaletta",
+    "args": {
+      "number": "Jononumero, johon ohitetaan"
+    }
+  },
+  "stop": {
+    "description": "Pysäyttää musiikin",
+    "errorNotQueue": "Mitään ei ole toistossa.",
+    "result": "<@{author}> ⏹ pysäytti musiikin!"
+  },
+  "uptime": {
+    "description": "Tarkista toiminta-aika",
+    "result": "Toiminta-aika: `{days} päivä(ä), {hours} tunti(a), {minutes} minuutti(a), {seconds} sekunti(a)`"
+  },
+  "volume": {
+    "description": "Muuttaa tällä hetkellä toistettavan musiikin äänenvoimakkuutta",
+    "errorNotQueue": "Mitään ei ole toistossa.",
+    "errorNotChannel": "Sinun on liityttävä puhekanavaan ensin!",
+    "currentVolume": "🔊 Nykyinen äänenvoimakkuus on: **{volume}%**",
+    "errorNotNumber": "Käytä numeroa äänenvoimakkuuden asettamiseen.",
+    "errorNotValid": "Käytä numeroa välillä 0 - 100.",
+    "result": "Äänenvoimakkuus asetettu: **{arg}%**"
+  },
+  "common": {
+    "on": "**päällä**",
+    "off": "**pois päältä**",
+    "enabled": "**käytössä**",
+    "disabled": "**pois käytöstä**",
+    "errorNotChannel": "Sinun on liityttävä puhekanavaan ensin!",
+    "cooldownMessage": "odota {time} sekuntia ennen kuin käytät `{name}`-komentoa uudelleen.",
+    "errorCommand": "Komentoa suoritettaessa tapahtui virhe."
+  },
+  "Invite me to your server!": "Kutsu minut palvelimellesi!",
+  "Invite": "Kutsu"
+}
